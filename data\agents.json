@@ -1,0 +1,35 @@
+{
+  "agents": [
+    {
+      "id": "uni-helper",
+      "name": "Uni Helper",
+      "one_liner": "Answers fees, Moodle, notes, eforms, and contacts.",
+      "commands": [
+        { "trigger": "/fees", "reply": "1) Open https://portal.univ.example 2) Login with student ID 3) Click Financial Services → Pay Online" },
+        { "trigger": "/moodle", "reply": "Moodle: https://moodle.univ.example. Click Log in → University account." },
+        { "trigger": "/notes", "reply": "Type: /notes COURSE_CODE (e.g., /notes CS201). Then you get the drive link." }
+      ],
+      "notes": "Upload Drive links later in dashboard."
+    },
+    {
+      "id": "class-finder",
+      "name": "Class Finder",
+      "one_liner": "Tells students where classes are and posts cancellations.",
+      "commands": [
+        { "trigger": "where is", "reply": "Type: where is <CLASS_CODE> (e.g., where is EE3210)." },
+        { "trigger": "/cancel", "reply": "Professors can mark class cancelled in the admin panel." }
+      ],
+      "notes": "Professors will be able to edit locations in Phase 2."
+    },
+    {
+      "id": "admin-assistant",
+      "name": "Admin Assistant",
+      "one_liner": "Helps with forms, contact emails, and simple campus FAQs.",
+      "commands": [
+        { "trigger": "/eform", "reply": "Student e-forms: https://portal.univ.example/forms. Choose form → fill → submit." },
+        { "trigger": "/contact", "reply": "Registrar: registrar@univ.example. IT Support: ithelp@univ.example." }
+      ],
+      "notes": "Good for admin or front-desk use."
+    }
+  ]
+}
